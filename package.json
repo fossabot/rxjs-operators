@@ -1,0 +1,22 @@
+{
+  "name": "@ndct/rxjs-operators",
+  "version": "1.2.0",
+  "description": "Rxjs 操作符扩展",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoDocCat/rxjs-operators.git"
+  },
+  "keywords": [
+    "rxjs",
+    "rxjs-operators"
+  ],
+  "author": {
+    "name": "NoDocCat",
+    "email": "nodoccat@outlook.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/NoDocCat/rxjs-operators/issues"
+  },
+  "homepage": "https://github.com/NoDocCat/rxjs-operators#readme"
+}
