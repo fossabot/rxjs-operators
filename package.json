@@ -2,6 +2,11 @@
   "name": "@ndct/rxjs-operators",
   "version": "1.2.0",
   "description": "Rxjs 操作符扩展",
+  "scripts": {
+    "lint": "yarn run lint:prettier && yarn run lint:eslint",
+    "lint:prettier": "prettier --check {**/*,*}.{js,ts,json}",
+    "lint:eslint": "eslint {**/*,*}.{js,ts}"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NoDocCat/rxjs-operators.git"
@@ -18,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/NoDocCat/rxjs-operators/issues"
   },
-  "homepage": "https://github.com/NoDocCat/rxjs-operators#readme"
+  "homepage": "https://github.com/NoDocCat/rxjs-operators#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "prettier": "^2.2.1"
+  }
 }
