@@ -2,7 +2,12 @@
   "name": "@ndct/rxjs-operators",
   "version": "1.2.0",
   "description": "Rxjs 操作符扩展",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
   "scripts": {
+    "build": "yarn run build:clean && yarn run build:compile",
+    "build:compile": "tsc -b ./tsconfig.json ./tsconfig.cjs.json",
+    "build:clean": "shx rm -rf ./dist",
     "lint": "yarn run lint:prettier && yarn run lint:eslint",
     "lint:prettier": "prettier --check {**/*,*}.{js,ts,json} --ignore-path ./.gitignore",
     "lint:eslint": "eslint {**/*,*}.{js,ts} --ignore-path ./.gitignore"
@@ -40,10 +45,14 @@
     }
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "shx": "^0.3.3",
+    "typescript": "^4.1.3"
   }
 }
