@@ -5,6 +5,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext"],
     "module": "ESNext",
+    "moduleResolution": "Node",
     "noImplicitReturns": true,
     "outDir": "./dist/esm",
     "sourceMap": true,
