@@ -13,6 +13,8 @@ jobs:
   code-check:
     name: Code check
     runs-on: ubuntu-latest
+    env:
+      CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -36,3 +38,6 @@ jobs:
 
       - name: Run test compile
         run: yarn run build:compile
+
+      - name: Upload test coverage to codacy
+        run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report
