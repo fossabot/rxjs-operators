@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    branches:
+      - "master"
+  workflow_dispatch:
+
+jobs:
+  code-check:
+    name: Code check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15
+
+      - name: Cache depend
+        uses: egordm/gha-yarn-node-cache@v1
+
+      - name: Install depend
+        run: yarn install
+
+      - name: Run code lint
+        run: yarn run lint
+
+      - name: Run code test
+        run: yarn run test
+
+      - name: Run test compile
+        run: yarn run build:compile
