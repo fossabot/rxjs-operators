@@ -6,6 +6,7 @@ Rxjs 操作符扩展
 ![CI](https://img.shields.io/github/workflow/status/nodoccat/rxjs-operators/CI?label=CI&logo=github&style=for-the-badge)
 ![code quality](https://img.shields.io/codacy/grade/821168e488bd4e50ac16b50f6740ac29?logo=codacy&style=for-the-badge)
 ![coverage](https://img.shields.io/codacy/coverage/821168e488bd4e50ac16b50f6740ac29?logo=codacy&style=for-the-badge)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNoDocCat%2Frxjs-operators.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FNoDocCat%2Frxjs-operators?ref=badge_shield)
 
 ## 安装
 
@@ -44,3 +45,7 @@ start<T>(callback: () => unknown): MonoTypeOperatorFunction<T>
 
   
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNoDocCat%2Frxjs-operators.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FNoDocCat%2Frxjs-operators?ref=badge_large)
